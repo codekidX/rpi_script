@@ -65,10 +65,8 @@ def config_keyboard():
 def config_network():
 	os.system(COMMAND_REMOVE_NETWORK_CONFIG)
 	# copy new config
-    shutil.copy2(NATIVE_NETWORK_CONFIG, NETWORK_CONFIG)
-
-    #set permissions
-    os.system(COMMAND_NETWORK_PERM)
+	shutil.copy2(NATIVE_NETWORK_CONFIG, NETWORK_CONFIG)
+	os.system(COMMAND_NETWORK_PERM)
 
 def config_raspi():
     os.system(COMMAND_RASPI_CONFIG)
@@ -109,3 +107,4 @@ evaluate_choice = {'1' : config_keyboard, '2' : config_network, '3' : config_ras
 
 if __name__ == '__main__':
 	main()
+			
