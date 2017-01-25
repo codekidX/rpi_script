@@ -1,5 +1,6 @@
 import os
 import sys
+import shutil
 
 # files path
 KEYBOARD_CONFIG = '/etc/default/keyboard'
